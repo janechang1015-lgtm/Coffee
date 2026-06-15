@@ -1,0 +1,551 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Microsoft JhengHei",sans-serif;
+    background:#f5f1eb;
+    color:#333;
+    line-height:1.9;
+}
+
+/* 左側導覽 */
+
+.sidebar{
+    width:240px;
+    height:calc(100vh - 140px); /* 調整為 140px */
+    background:#304238;
+    position:fixed;
+    left:0;
+    top:140px;                  /* 調整為 140px */
+    padding:20px;
+    overflow-y:auto;
+}
+
+.sidebar h2{
+    color:white;
+    font-size:28px;
+    margin-bottom:30px;
+    text-align:center;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    margin-bottom:15px;
+}
+
+.sidebar a{
+    display:block;
+    text-decoration:none;
+    color:white;
+    padding:12px 16px;
+    border-radius:12px;
+    transition:0.3s;
+    font-weight:bold;
+    background:rgba(255,255,255,0.08);
+}
+
+.sidebar a:hover{
+    background:#8c6a3f;
+    transform:translateX(5px);
+}
+
+
+.page-layout{
+    display:flex;
+}
+
+
+/* 主內容區 */
+
+.main-content{
+    margin-left:240px;
+    width:calc(100% - 240px);
+    margin-top:140px;           /* 調整為 140px */
+}
+/* hero */
+
+.hero{
+    background:linear-gradient(to right,#f7f4ef,#ece6de);
+    color:#2d2d2d;
+    border-bottom:1px solid #d8d1c7;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.hero h1{
+    font-size:52px;
+    margin:0 0 10px 0;   /* 移除預設 margin，控制間距 */
+    line-height:1.2;     /* 讓兩行標題更緊湊 */
+}
+
+.hero p{
+    margin:0;            /* 移除預設段落空白 */
+    font-size:22px;
+}
+
+/* 主內容 */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:40px 0;
+}
+
+/* 區塊 */
+
+.section{
+    background:#fffdf9;
+    margin-bottom:35px;
+    padding:35px;
+    border-radius:18px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    animation:fadeInUp 0.8s ease;
+}
+
+@keyframes fadeInUp{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+.section h2{
+    color:#304238;
+    margin-bottom:20px;
+    border-left:7px solid #8c6a3f;
+    padding-left:12px;
+    font-size:32px;
+}
+
+.section h3{
+    margin-top:25px;
+    margin-bottom:15px;
+    color:#8c6a3f;
+}
+
+.section h4{
+    margin-top:18px;
+    margin-bottom:10px;
+    color:#6f4e37;
+}
+
+/* 重點標示 */
+
+.highlight{
+    color:#8c6a3f;
+    background:#f3ebe2;
+    padding:3px 8px;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+.blue-highlight{
+    color:#304238;
+    background:#e8efe9;
+    padding:3px 8px;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+/* 表格 */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table th,
+table td{
+    border:1px solid #ccc;
+    padding:14px;
+    vertical-align:top;
+}
+
+table th{
+    background:#304238;
+    color:white;
+}
+
+/* 列表 */
+
+ul,
+ol{
+    margin-left:30px;
+    margin-top:10px;
+}
+
+li{
+    margin-bottom:10px;
+}
+
+/* 科別 */
+
+.subject-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+.subject-card{
+    background:#f7f4ef;
+    border-radius:15px;
+    padding:20px;
+    transition:0.3s;
+    border:2px solid #e2d3c2;
+}
+
+.subject-card:hover{
+    transform:translateY(-8px);
+    background:#ece6de;
+}
+
+.subject-card h4{
+    margin-bottom:10px;
+}
+
+/* 流程圖 */
+
+.flow{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:20px;
+}
+
+.flow-step{
+    background:#304238;
+    color:white;
+    padding:15px 20px;
+    border-radius:12px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.flow-step:hover{
+    background:#8c6a3f;
+    transform:scale(1.05);
+}
+
+/* 注意事項 */
+
+.notice{
+    background:#f7f4ef;
+    border-left:6px solid #8c6a3f;
+    padding:15px;
+    margin-top:20px;
+}
+
+/* details */
+
+details{
+    margin-top:15px;
+    background:#f7f4ef;
+    padding:15px;
+    border-radius:10px;
+}
+
+summary{
+    cursor:pointer;
+    font-weight:bold;
+    color:#304238;
+}
+
+/* 圖片 */
+
+img{
+    margin-top:20px;
+    border-radius:15px;
+    transition:0.3s;
+    max-width:100%;
+}
+
+img:hover{
+    transform:scale(1.03);
+}
+
+/* 回到頂部 */
+
+#topBtn{
+    position:fixed;
+    right:30px;
+    bottom:30px;
+    background:#304238;
+    color:white;
+    border:none;
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    font-size:22px;
+    cursor:pointer;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+#topBtn:hover{
+    background:#8c6a3f;
+    transform:translateY(-5px);
+}
+
+/* footer */
+
+footer{
+    background:#304238;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+
+.source{
+    margin-top:30px;
+    font-size:14px;
+    color:#666;
+    word-break:break-all;
+}
+
+/* 手機版 */
+
+@media(max-width:768px){
+
+
+    .sidebar{
+        width:100%;
+        height:auto;
+        position:relative;
+    }
+
+    .main-content{
+        margin-left:0;
+        width:100%;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .section{
+        padding:25px;
+    }
+
+}
+
+
+
+
+
+
+
+/* =========================
+   頂部導覽列
+========================= */
+
+/* ===================================================
+   全新修改：統一的頂部導覽列、Logo 與倒數計時器樣式 
+   =================================================== */
+
+header {
+    background: linear-gradient(to right, #f7f4ef, #ece6de);
+    padding: 20px 35px;
+    border-bottom: 1px solid #d8d1c7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ===== Logo 區塊 ===== */
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.logo {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: 3px solid #304238;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    background: white;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+
+.site-title h1 {
+    font-size: 20px;
+    color: #2d2d2d;
+    letter-spacing: 2px;
+    line-height: 1.3;
+    text-align: left;
+}
+
+.site-title a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ===== 標語與導覽列 ===== */
+.slogan {
+    font-size: 16px;
+    color: #8c6a3f;
+    font-weight: 600;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3f3f3f;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #8c6a3f;
+}
+
+/* ===== 倒數計時器 ===== */
+.countdown {
+    background: #fff;
+    border-radius: 10px;
+    padding: 8px 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    border: 1px solid #ddd;
+    display: inline-block;
+    text-align: center;
+}
+
+.countdown-title {
+    font-size: 12px;
+    margin-bottom: 6px;
+    color: #666;
+    font-weight: 600;
+}
+
+.timer {
+    display: flex;
+    gap: 10px;
+}
+
+.time-box {
+    text-align: center;
+}
+
+.time-box span {
+    display: block;
+    background: #304238;
+    color: white;
+    padding: 6px 8px;
+    border-radius: 5px;
+    font-size: 14.4px;
+    font-weight: bold;
+    min-width: 35px;
+}
+
+.time-box small {
+    margin-top: 3px;
+    display: block;
+    color: #333;
+}
+
+/* ===== 導覽列手機版 RWD 適應 ===== */
+@media(max-width: 900px) {
+    .top-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    /* 當手機版導覽列展開時，推開左側選單與主內容防遮擋 */
+    .sidebar {
+        top: auto;
+        height: auto;
+    }
+    .main-content {
+        margin-top: 0;
+    }
+}
+
+
+
+/* =========================
+   麵包屑導覽
+========================= */
+
+.breadcrumb{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 40px;
+
+    background:#f3e8dc;
+
+    border-bottom:1px solid #e2d3c2;
+
+    font-size:15px;
+}
+
+.breadcrumb a{
+    color:#6f4e37;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.breadcrumb a:hover{
+    text-decoration:underline;
+}
+
+@media(max-width:768px){
+
+    .breadcrumb{
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+    }
+
+}

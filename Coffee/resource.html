@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>資源中心</title>
+<link rel="stylesheet" href="css.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+    .category-link{
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.category-link:hover{
+    color: #8c6a3f;
+    padding-left: 6px;
+}
+
+.category-cell{
+    transition: all 0.25s ease;
+}
+
+.category-cell:hover{
+    background:#f5f1e8;
+}
+
+/* 連結文字本身 */
+.category-link{
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    display: block;          /* 讓整格都能觸發 */
+}
+
+.category-cell:hover .category-link{
+    color: #8c6a3f;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="top-header">
+
+        <div class="logo-area">
+            <div class="logo"><a href="index.html">☕</a></div>
+
+            <div class="site-title">
+                <h1><a href="index.html">咖啡因攝取<br>對於注意力與<br>睡眠品質之影響</a></h1>
+            </div>
+        </div>
+
+        <div class="slogan">
+            深入了解咖啡因影響，找回生活與專注的平衡。
+            <br>
+            <nav>
+                <a href="map.html">網站地圖 </a>
+                <a href="topic.html">｜　主題相關議題</a>
+                <a href="science-fair-intro.html">｜　科展與研究素養介紹</a>
+                <a href="keyword.html">｜　關鍵詞彙索引典</a>
+                <a href="about.html">｜　關於我們</a>
+                <a href="faq.html">｜　FAQ</a>
+            </nav>
+        </div>
+
+        <div class="countdown">
+            <div class="countdown-title">
+                科展比賽截稿倒數
+            </div>
+
+            <div class="timer">
+                <div class="time-box">
+                    <span id="days">45</span>
+                    <small>天</small>
+                </div>
+                <div class="time-box">
+                    <span id="hours">12</span>
+                    <small>時</small>
+                </div>
+                <div class="time-box">
+                    <span id="minutes">36</span>
+                    <small>分</small>
+                </div>
+                <div class="time-box">
+                    <span id="seconds">58</span>
+                    <small>秒</small>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</header>
+
+<div class="body-text">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:25px; font-size:15px; color:#666;">
+
+    <div>
+        <a href="index.html">首頁</a> > 
+        <a href="resource.html">資源中心</a>
+    </div>
+
+    <div>
+        <a href="index.html">返回上一層</a>
+    </div>
+
+</div>
+<hr>
+<br>
+    <h2>資源中心</h2>
+    <p>
+        本頁彙整與科展研究最重要的學術資源分類，請點擊進入查看詳細介紹。
+    </p>
+
+    <h3>本研究主題涉及之相關學科領域</h3>
+    <p>
+    在主題發想過程中，本研究歸納出五個與咖啡因攝取相關的重要議題，並依據各議題對應之學科領域，作為後續查找參考資源的依據：
+    </p>
+
+    <p>
+    1. <strong>認識咖啡因：</strong>營養學。<br>
+    2. <strong>對注意力的影響：</strong>神經科學、心理學、臨床醫學。<br>
+    3. <strong>對睡眠的影響：</strong>神經科學、臨床醫學。<br>
+    4. <strong>使用習慣與潛在風險：</strong>行為科學、臨床醫學。<br>
+    5. <strong>攝取建議：</strong>營養學、臨床醫學。
+    </p>
+
+    <p>
+    因此，本資源中心所提供之核心期刊、資料庫、學會與會議、以及相關網站，皆依據上述學科領域進行篩選，協助使用者能更精準地找到符合研究主題、目標族群與研究內容之合宜參考資源。
+    </p>
+
+    <table style="width:100%; border-collapse:collapse; margin-top:30px; background:white;">
+
+        <tr style="background:#f3efe9; font-weight:600;">
+            <td style="padding:18px; border:1px solid #ddd; width:30%;">分類</td>
+            <td style="padding:18px; border:1px solid #ddd;">說明</td>
+        </tr>
+
+        <tr>
+            <td class="category-cell" style="padding:18px; border:1px solid #ddd;">
+                <a href="journal.html" class="category-link">核心期刊</a>
+            </td>
+            <td class="category-cell" style="padding:18px; border:1px solid #ddd;">收錄高品質學術論文之期刊，是文獻探討最重要來源。</td>
+        </tr>
+
+        <tr>
+            <td class="category-cell" style="padding:18px; border:1px solid #ddd;">
+                <a href="database.html" class="category-link">資料庫</a>
+            </td>
+            <td class="category-cell" style="padding:18px; border:1px solid #ddd;">用來檢索學術論文與研究資料的專業搜尋工具。</td>
+        </tr>
+
+        <tr>
+            <td class="category-cell" style="padding:18px; border:1px solid #ddd;">
+                <a href="association.html" class="category-link">重要學會 & 會議</a>
+            </td>
+            <td class="category-cell" style="padding:18px; border:1px solid #ddd;">掌握研究趨勢與最新發表的重要學術組織與會議。</td>
+        </tr>
+
+        <tr>
+            <td class="category-cell" style="padding:18px; border:1px solid #ddd;">
+                <a href="website.html" class="category-link">雜誌 & 網站</a>
+            </td>
+            <td class="category-cell" style="padding:18px; border:1px solid #ddd;">科普與研究延伸閱讀的重要網站與雜誌來源。</td>
+        </tr>
+
+    </table>
+
+</div>
+
+<footer>
+    © 2026 Caffeine Research Hub. All Rights Reserved.
+</footer>
+
+<script>
+const deadline = new Date("2026-07-30 23:59:59").getTime();
+
+function updateCountdown(){
+    const now = new Date().getTime();
+    const distance = deadline - now;
+
+    document.getElementById("days").innerText = Math.floor(distance / (1000 * 60 * 60 * 24));
+    document.getElementById("hours").innerText = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    document.getElementById("minutes").innerText = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    document.getElementById("seconds").innerText = Math.floor((distance % (1000 * 60)) / 1000);
+}
+setInterval(updateCountdown,1000);
+</script>
+
+</body>
+</html>
