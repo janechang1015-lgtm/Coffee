@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>關鍵詞彙索引典</title>
+<!-- 連接 CSS 檔案 -->
+<link rel="stylesheet" href="css.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+    .sub-category h3 {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .sub-category h4 {
+        margin-top: 15px;
+        margin-bottom: 25x;
+    }
+
+    /* 大容器：主題區塊 */
+    .category-bubble {
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:40px;
+        padding:40px 80px;
+    }
+
+    /* 小容器：子分類 */
+    .sub-category {
+        background:white;
+        border-radius:30px;
+        padding:25px;
+        box-shadow:0 4px 12px rgba(0,0,0,0.08);
+        min-height:300px;
+    }
+
+    /* 關鍵字：膠囊型 */
+    .keyword-tag {
+        display: inline-block;
+        background: #304238;
+        color: white;
+        padding: 4px 12px;
+        border-radius: 15px;
+        margin: 5px;
+        font-size: 14px;
+        transition: transform 0.2s;
+        cursor: pointer;
+    }
+
+    .keyword-tag:hover {
+        transform: scale(1.1);
+        background: #8c6a3f;
+    }
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="top-header">
+        <div class="logo-area">
+            <div class="logo"><a href="index.html">☕</a></div>
+            <div class="site-title">
+                <h1><a href="index.html">咖啡因攝取<br>對於注意力與<br>睡眠品質之影響</a></h1>
+            </div>
+        </div>
+        <div class="slogan">
+            深入了解咖啡因影響，找回生活與專注的平衡。
+            <br>
+
+            <!-- 導覽列 -->
+            <nav>
+                <a href="map.html">網站地圖 </a>
+                <a href="topic.html">｜　主題相關議題</a>
+                <a href="science-fair-intro.html">｜　科展與研究素養介紹</a>
+                <a href="keyword.html">｜　關鍵詞彙索引典</a>
+                <a href="about.html">｜　關於我們</a>
+                <a href="faq.html">｜　FAQ</a>
+            </nav>
+        </div>
+
+        <!-- 倒數器 -->
+        <div class="countdown">
+            <div class="countdown-title">
+                科展比賽截稿倒數
+            </div>
+            <div class="timer">
+
+                <div class="time-box">
+                    <span id="days">45</span>
+                    <small>天</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="hours">12</span>
+                    <small>時</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="minutes">36</span>
+                    <small>分</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="seconds">58</span>
+                    <small>秒</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>
+<!-- 網頁內容 -->
+<div class="body-text">
+
+    <!-- 麵包屑 -->
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:25px; font-size:15px; color:#666;">
+        <div>
+            <a href="index.html">首頁</a> > 
+            關鍵詞彙索引典
+        </div>
+        <div>
+            <a href="index.html">返回上一層</a>
+        </div>
+    </div>
+    <hr><br>
+
+    <h2>關鍵詞彙索引典</h2>
+    <p>
+        您可以參考我們列出的關鍵詞，用來幫助您在搜尋引擎或任何資源中選擇檢所的關鍵字。可依照你想了解的方向（如想更了解咖啡因？還是科展更詳細的規範）參考不同框格中的關鍵字。★ 點擊該關鍵字可直接複製 ★<br>
+        ＊以「/」符號分隔的左右兩側詞彙互為同義詞！
+    </p>
+    <section class="category-bubble">
+        <div class="sub-category">
+        <h3>主題相關</h3>
+            <h4>醫學名詞</h4>
+            <div class="tags">
+                <span class="keyword-tag">生物鹼</span>/
+                <span class="keyword-tag">Alkaloid</span>/
+                <span class="keyword-tag">植物性生物鹼</span>/
+                <span class="keyword-tag">Plant Alkaloid</span><br>
+                <span class="keyword-tag">咖啡因</span>/
+                <span class="keyword-tag">Caffeine</span><br>
+                
+                <span class="keyword-tag">中樞神經系統</span>/<span class="keyword-tag">Central Nervous System</span>　
+                <span class="keyword-tag">興奮劑</span>/
+                <span class="keyword-tag">Stimulants </span><br>
+                <span class="keyword-tag">腺苷</span>/
+                <span class="keyword-tag">Adenosine</span>/
+                <span class="keyword-tag">Adenocard</span>/
+                <span class="keyword-tag">Adenoscan</span><br>
+                <span class="keyword-tag">注意力</span>/
+                <span class="keyword-tag">Attention</span>/
+                <span class="keyword-tag">專注力</span>/
+                <span class="keyword-tag">Concentration</span><br>
+                <span class="keyword-tag">睡眠</span>/
+                <span class="keyword-tag">Sleep</span>/
+                <span class="keyword-tag">Napping</span>　
+                <span class="keyword-tag">短期記憶</span>/
+                <span class="keyword-tag">Short-Term Memory</span><br>
+                <span class="keyword-tag">反彈性疲勞</span>/
+                <span class="keyword-tag">反彈效應</span>　
+                <span class="keyword-tag">耐受性</span>/
+                <span class="keyword-tag">Drug Tolerance</span><br>
+                <span class="keyword-tag">副作用</span>
+                <span class="keyword-tag">警覺性</span>
+                <span class="keyword-tag">催眠訊號</span>
+                <span class="keyword-tag">依賴性</span>
+                <span class="keyword-tag">攝取建議</span>
+            </div>
+            <h4>領域範圍</h4>
+            <div class="tags">
+                <span class="keyword-tag">營養學</span>
+                <span class="keyword-tag">神經科學</span>
+                <span class="keyword-tag">臨床醫學</span>
+                <span class="keyword-tag">心理學</span>
+                <span class="keyword-tag">行為科學</span>
+            </div>
+        </div>
+
+        <div class="sub-category">
+        <h3>參考資源與工具</h3>
+            <h4>資源種類</h4>
+            <div class="tags">
+                <span class="keyword-tag">期刊</span>
+                <span class="keyword-tag">論文</span>
+                <span class="keyword-tag">學會</span>
+                <span class="keyword-tag">會議</span>
+                <span class="keyword-tag">資料庫</span>
+                <span class="keyword-tag">電子書</span>
+            </div>
+            <h4>檢索</h4>
+            <div class="tags">
+                <span class="keyword-tag">檢索工具</span>
+                <span class="keyword-tag">資料庫</span>
+                <span class="keyword-tag">索引典</span>
+                <span class="keyword-tag">同義詞</span>
+                <span class="keyword-tag">檢索技巧</span>
+                <span class="keyword-tag">布林邏輯</span>
+                <span class="keyword-tag">切截字</span>
+            </div>
+            <h4>來源可信度</h4>
+            <div class="tags">
+                <span class="keyword-tag">權威性</span>
+                <span class="keyword-tag">SCIE</span>
+                <span class="keyword-tag">SSCI</span>
+                <span class="keyword-tag">TSSCI</span>
+                <span class="keyword-tag">期刊影響力</span>
+                <span class="keyword-tag">JIF</span>
+                <span class="keyword-tag">JCI</span>
+                
+            </div>
+            <h4>引用規範</h4>
+            <div class="tags">
+                <span class="keyword-tag">參考文獻</span>
+                <span class="keyword-tag">引註規範</span>
+                <span class="keyword-tag">引用格式</span>
+                
+                <span class="keyword-tag">APA</span>
+                <span class="keyword-tag">圖表標示</span>
+            </div>
+            <h4>工具</h4>
+            <div class="tags">
+                <span class="keyword-tag">海報設計</span>
+                <span class="keyword-tag">配色工具</span>
+                <span class="keyword-tag">Excel</span>
+            </div>
+        </div>
+
+        <div class="sub-category">
+        <h3>科展相關</h3>
+            <span class="keyword-tag">展覽科別</span>
+            <span class="keyword-tag">評審標準</span>
+            <span class="keyword-tag">參加資格</span>
+            <span class="keyword-tag">報名作業</span>
+            <span class="keyword-tag">報名資料</span>
+            <span class="keyword-tag">截止日期</span>
+            <span class="keyword-tag">研究報告</span>
+            <span class="keyword-tag">初審</span>
+            <span class="keyword-tag">複審</span>
+            <span class="keyword-tag">原創性</span>
+            <span class="keyword-tag">科學方法</span>
+        </div>
+        
+        <div class="sub-category">
+        <h3>研究相關</h3>
+            <h4>研究素養</h4>
+            <div class="tags">
+                <span class="keyword-tag">資訊素養</span>
+                <span class="keyword-tag">工具素養</span>
+                <span class="keyword-tag">資源素養</span>
+                <span class="keyword-tag">社會結構素養</span>
+                <span class="keyword-tag">研究素養</span>
+                <span class="keyword-tag">出版素養</span>
+                <span class="keyword-tag">科技素養</span>
+                <span class="keyword-tag">批判素養</span>
+                <span class="keyword-tag">不當研究行為</span>　
+                <span class="keyword-tag">學術倫理</span>/
+                <span class="keyword-tag">學術誠信</span>
+            </div>
+            <h4>研究過程</h4>
+            <div class="tags">
+                <span class="keyword-tag">研究流程</span>
+                <span class="keyword-tag">研究方法</span>
+                <span class="keyword-tag">文獻探討</span>
+                <span class="keyword-tag">量化研究</span>
+                <span class="keyword-tag">質化研究</span>
+                <span class="keyword-tag">分析軟體</span>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    © 2026 Caffeine Research Hub. All Rights Reserved.
+</footer>
+
+
+
+<script>
+// 倒數計時器
+const deadline = new Date("2026-07-30 23:59:59").getTime();
+
+function updateCountdown(){
+
+    const now = new Date().getTime();
+    const distance = deadline - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("days").innerText = days;
+    document.getElementById("hours").innerText = hours;
+    document.getElementById("minutes").innerText = minutes;
+    document.getElementById("seconds").innerText = seconds;
+}
+setInterval(updateCountdown,1000);
+
+// 選取所有的關鍵字標籤
+const tags = document.querySelectorAll('.keyword-tag');
+
+tags.forEach(tag => {
+    tag.addEventListener('click', function() {
+        const textToCopy = this.innerText; // 取得標籤內的文字
+
+        // 執行複製動作
+        navigator.clipboard.writeText(textToCopy).then(() => {
+            // 複製成功後的視覺回饋
+            showFeedback(this);
+        }).catch(err => {
+            console.error('複製失敗: ', err);
+        });
+    });
+});
+
+// 視覺回饋函式
+function showFeedback(element) {
+    const originalText = element.innerText;
+    
+    // 變化樣式：例如變色並顯示「已複製」
+    element.style.background = "#8c6a3f"; 
+    element.innerText = "已複製";
+    
+    // 1秒後恢復原狀
+    setTimeout(() => {
+        element.style.background = ""; // 恢復 CSS 設定的顏色
+        element.innerText = originalText;
+    }, 1000);
+}
+
+</script>
+
+</body>
+</html>

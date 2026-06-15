@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>FAQ</title>
+<!-- 連接 CSS 檔案 -->
+<link rel="stylesheet" href="css.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+.floating-mail{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    z-index:999;
+    text-align: center;
+    font-size: 14px;
+}
+
+#mail-btn{
+    width:60px;
+    height:60px;
+    border:none;
+    border-radius:50%;
+    background:#304238;
+    color:white;
+    font-size:24px;
+    cursor:pointer;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.mail-box{
+    display:none;
+    position:absolute;
+    bottom:120px;
+    right:0;
+    width:280px;
+    background:white;
+    padding:15px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+}
+
+.mail-box textarea{
+    width:100%;
+    height:100px;
+    padding:10px;
+    resize:none;
+    border:1px solid #ccc;
+    border-radius:8px;
+    margin-bottom:10px;
+}
+
+.mail-box button{
+    width:100%;
+    padding:10px;
+    border:none;
+    background:#8c6a3f;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="top-header">
+
+        <div class="logo-area">
+
+            <div class="logo"><a href="index.html">☕</a></div>
+            <div class="site-title">
+                <h1><a href="index.html">咖啡因攝取<br>對於注意力與<br>睡眠品質之影響</a></h1>
+            </div>
+
+        </div>
+
+        <div class="slogan">
+            深入了解咖啡因影響，找回生活與專注的平衡。
+            <br>
+
+            <!-- 導覽列 -->
+            <nav>
+                <a href="map.html">網站地圖 </a>
+                <a href="topic.html">｜　主題相關議題</a>
+                <a href="science-fair-intro.html">｜　科展與研究素養介紹</a>
+                <a href="keyword.html">｜　關鍵詞彙索引典</a>
+                <a href="about.html">｜　關於我們</a>
+                <a href="faq.html">｜　FAQ</a>
+            </nav>
+        </div>
+
+        <!-- 倒數器 -->
+        <div class="countdown">
+
+            <div class="countdown-title">
+                科展比賽截稿倒數
+            </div>
+
+            <div class="timer">
+
+                <div class="time-box">
+                    <span id="days">45</span>
+                    <small>天</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="hours">12</span>
+                    <small>時</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="minutes">36</span>
+                    <small>分</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="seconds">58</span>
+                    <small>秒</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+<!-- 網頁內容 -->
+<div class="body-text">
+    <!-- 麵包屑 -->
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:25px; font-size:15px; color:#666;">
+        <div>
+            <a href="index.html">首頁</a> > 
+            FAQ
+        </div>
+        <div>
+            <a href="index.html">返回上一層</a>
+        </div>
+    </div>
+
+    <hr><br>
+
+    <h2>常見問題</h2>
+    <p>
+        本團隊只幫助您了解科展競賽須注意之流程以及參考資源之運用，有關研究內容本身的問題我們無法介入。
+    </p>
+    
+    <h3>Q1：如何報名科展？</h3>
+    <p>
+        學生需完成線上報名（至科教館系統填列上傳資料）以及紙本寄送需繳交之文件（掛號寄達科教館）兩項作業才算完成。繳交文件包含作品送展清冊（需核章）、報名表、研究報告（含中英文摘要各約 350 字）及其他補充資料。
+    </p>
+    <p>
+        ＊詳見<a href="science-fair-intro.html">科展與研究素養介紹</a>
+    </p><br>
+    <h3>Q2：科展的評審標準？</h3>
+    <p>科展的評審標準主要分為以下這四大面向：</p>
+        <h4>研究主題：</h4>
+        <p>
+            好的研究必須要有清楚且聚焦的主題，且該主題應對相關領域有所貢獻，並能使用科學方法進行檢驗。
+        </p>
+        <h4>創意與價值：</h4>
+        <p>
+            評審會看作品是否具備原創性、方法是否可行，以及對於科學、社會或經濟是否具有產出影響的潛力。
+        </p>
+        <h4>科學方法的適切性：</h4>
+        <p>
+            ．設計周全的研究計畫。<br>
+            ．變因控管（控因與變因）必須清楚且完整。<br>
+            ．有系統地收集並分析數據，且實驗結果要具有再現性。<br>
+            ．能正確應用數學或統計方法，並確保數據足以證實結論。
+        </p>
+        <h4>展示及表達能力：</h4>
+        <p>
+            ．海報與圖表的邏輯性與清晰度。<br>
+            ．是否準備了「實驗紀錄簿（研究日誌）」與參考文獻。<br>
+            ．口頭回答問題是否簡潔、縝密，且對研究的科學原理與限制有深刻理解。<br>
+            ．展現處理作品的獨立性；若是團體作品，則所有作者都必須對作品有理解與貢獻。<br>
+            ．是否對未來研究有進一步的構思與方向。
+        </p>
+        <p>
+        ＊詳見<a href="science-fair-intro.html">科展與研究素養介紹</a>
+    </p><br>
+    <h3>Q3：什麼是「研究方法」？</h3>
+    <p>
+        研究方法（Research Methods）是指為了解決特定問題、驗證假說或發現新知識，系統性地蒐集與分析資料的一套流程與工具。研究方法通常可分為以下三大核心類型：
+    </p>
+        <h4>1. 量化研究（Quantitative Research）</h4>
+        <p>
+            通常利用結構化問卷調查、實驗法、大數據分析、統計模型檢定等方法。透過統計與邏輯推理來驗證假設或推論因果關係。用於需要樣本數大、了解整體趨勢或客觀數據的狀況（如：評估新藥成效、民意調查）。
+        </p>
+        <h4>2. 質性研究（Qualitative Research）</h4>
+        <p>
+            通常利用深度訪談法、焦點團體、參與觀察法、田野調查。深入探索人類行為、動機與社會現象，著重於脈絡與主觀意義的理解。用於受訪者樣本較少，但需要深度、細緻描述與剖析的問題（如：探討消費者購買決策的心理、某個案的發展歷程）。
+        </p>
+        <h4>3. 混合方法研究（Mixed Methods Research）</h4>
+        <p>
+            同時結合「量化」與「質性」的優勢進行研究。用於當單一方法不足以回答複雜問題時。
+        </p><br>
+    
+    <h3>Q4：網路文章可以當作參考文獻嗎？</h3>
+    <p>
+        可以！且引用時，也有專屬於網路資料的引用格式。不過為了確保內容的可信度與權威性，還是要選擇較官方，或有明確資料來源的文章來做參考。
+    </p><br>
+    <h3>Q5：怎麼尋找可信度高的期刊文獻？</h3>
+    <p>
+        建議利用各種同儕審查標準，來尋找具權威性的「核心期刊」。
+    </p>
+    <p>
+        核心期刊是經過嚴謹的同儕審查制度，並被國際重要期刊索引資料庫收錄的高品質學術期刊，代表其在學術領域中具有較高的影響力與可信度。
+        想尋找不同領域或不同地區的核心期刊，用的同儕審查標準就會不同。以下列出建議參考的同儕審查制度：
+    </p>
+        <h4>國際指標：</h4>
+        <p>
+            <a target="_blank" href="https://mjl.clarivate.com/search-results">Web of Science Master Journal List</a>引文索引資料庫中收錄了各領域的核心期刊清單。進入此平台後左側欄位「Core Collection」可勾選不同領域的引文索引：<br>
+            ．想查找自然科學領域的核心期刊，可參考被 SCIE（自然科學引文索引）收錄的期刊。<br>
+            ．想查找社會科學領域的核心期刊，可參考被 SSCI（社會科學引文索引）收錄的期刊。
+            <p>
+                稍微往下滑的「Current Contents」列出較細的學科分類，可依自己的需求勾選。將左側需要的欄位勾選好後，右邊就會出現篩選出的期刊。
+            </p>
+        </p>
+        <h4>國內指標：</h4>
+        <p>
+            臺灣有專屬於自己的人文社會科學引文索引，為國科會人文社會科學研究中心開發的「TSSCI（臺灣社會科學引文索引）」，可參考 TSSCI 評比為第一級的期刊。
+        </p>
+        <p>
+            查詢路徑為：Tssci核心期刊 國科會人文社會科學研究中心
+            <a target="_blank" href="https://www.hss.ntu.edu.tw/zh-tw">首頁</a> ＞ <a target="_blank" href="https://www.hss.ntu.edu.tw/zh-tw/thcitssci">期刊評比收錄</a> ＞ <a target="_blank" href="https://www.hss.ntu.edu.tw/zh-tw/thcitssci/50">各學門核心期刊列表暨開放取用資訊</a>。網頁中列出各種人文社會學的子學門，點選有興趣的學門後，即可查看該學科的 TSSCI 清單。
+        </p>
+        <h4>數據判斷：</h4>
+        <p>
+            透過 JCR（期刊影響係數） 及其四分位數（Q1至Q4）來評估，Q1 代表該期刊在所屬領域排名在前 25%，最具影響力。
+        </p>
+        <p>
+            可使用 <a target="_blank" href="https://jcr-clarivate-com.ezproxy.lib.tku.edu.tw/jcr/home?app=jcr&Init=Yes&authCode=null&SrcApp=IC2LS">Journal Citation Reports</a> 資料庫，點選 <a target="_blank" href="https://jcr-clarivate-com.ezproxy.lib.tku.edu.tw/jcr/browse-categories">categories</a>，再選擇需要的學科後，就會出現屬於該學科分類的期刊清單，每個期刊後街列出這個期刊的影響力資訊。排在越上面的，影響力越大。
+        </p>
+        <p>
+            ＊詳見<a href="journal.html">核心期刊</a>
+        </p><br>
+    
+    <h3>Q7：什麼是資料庫、期刊？與論文的關係是什麼？</h3>
+    <p>
+        論文（Paper）是一篇一篇的研究成果紀錄；期刊（Journal）是定期出版、刊登多篇論文的學術刊物；而資料庫（Database）則是收集並整合眾多期刊與論文的數位搜尋平台。因此資料庫包含多本期刊，期刊收錄數篇論文。三者的階層關係為：資料庫 > 期刊 > 論文。</p><br>
+
+    <h3>Q6：什麼是引用格式？</h3>
+    <p>
+        引用格式是一套標準化的參考文獻記錄方式，規定研究者在論文或報告中引用他人觀點、數據或文字時，必須遵循的引用規則。其主要目的如下：<br>
+        ．維護學術倫理：展現對原作者研究成果的尊重，避免剽竊、造假等不當研究行為。<br>
+        ．展現研究素養：正確的引註是研究素養的體現，代表研究者能系統化地整合學術資源。<br>
+        ．提供查證路徑：讓讀者與評審能根據引註資訊，找到原始文獻進行核實。
+    </p>
+        <h4>常見的引用格式種類介紹</h4>
+        <p>
+            ．APA 格式：最常見的引用格式。廣泛應用於心理學、教育學、社會科學以及本研究主題所涉及的醫學領域。<br>
+            ．MLA 格式：主要用於文學、語言學及人文藝術領。<br>
+            ．Chicago 格式：常用於歷史學、商業及藝術領域。<br>
+            ．IEEE 格式：多用於電機工程、電腦科學與資訊技術等學科。
+        </p>
+        <p>
+            ＊詳見<a href="research-tools.html">研究輔助</a>
+        </p><br>
+    <h3>Q8：如何將實驗數據繪製成圖表？</h3>
+    <p>
+        可利用Excel紀錄實驗數據，再使用圖表工具將數據資料轉換為圖表。<br>
+        圖表製作教學影片：<a target="_blank" href="https://www.youtube.com/watch?v=PVcp5kmwuCs">上</a>、<a target="_blank" href="https://www.youtube.com/watch?v=g66Zm1iIqd0">下</a><br>
+        樞紐分析表製作教學影片：<a target="_blank" href="https://www.youtube.com/watch?v=Fz8T_5V2hUc">連結</a>
+    </p>
+</div>
+
+<!-- 意見信箱 -->
+<div class="floating-mail">
+
+    <button id="mail-btn">✉</button>
+
+    <div class="mail-box" id="mail-box">
+
+        <form action="https://formspree.io/f/mrejojpd" method="POST">
+
+            <textarea 
+            name="message" 
+            placeholder="輸入您的問題..."
+            required></textarea>
+
+            <textarea 
+            name="mail" 
+            placeholder="您的電子信箱："
+            required></textarea>
+
+            <button type="submit">送出</button>
+
+        </form>
+
+    </div>
+    <p>點開問題信箱<br>輸入您的問題</p>
+</div>
+
+
+<footer>
+    © 2026 Caffeine Research Hub. All Rights Reserved.
+</footer>
+
+<script>
+
+<!-- 倒數計時器 -->
+const deadline = new Date("2026-07-30 23:59:59").getTime();
+
+function updateCountdown(){
+
+    const now = new Date().getTime();
+    const distance = deadline - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("days").innerText = days;
+    document.getElementById("hours").innerText = hours;
+    document.getElementById("minutes").innerText = minutes;
+    document.getElementById("seconds").innerText = seconds;
+}
+
+setInterval(updateCountdown,1000);
+
+/*意見信箱*/
+const mailBtn = document.getElementById("mail-btn");
+const mailBox = document.getElementById("mail-box");
+
+mailBtn.addEventListener("click",()=>{
+
+    if(mailBox.style.display === "block"){
+        mailBox.style.display = "none";
+    }
+    else{
+        mailBox.style.display = "block";
+    }
+
+});
+</script>
+</body>
+</html>

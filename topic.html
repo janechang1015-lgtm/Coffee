@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>主題相關議題</title>
+
+<style>
+/* 基本設定 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Serif TC', serif;
+    background: #f5f1eb;
+    line-height: 1.6;
+}
+
+/* 內容區塊間距優化 */
+.body-text {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.body-text h2 {
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.body-text h3 {
+    font-size: 18px;
+    color: #8c6a3f;
+    letter-spacing: 1px;
+    margin-top: 25px;
+}
+
+.body-text p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+/* ===== Header ===== */
+header {
+    background: linear-gradient(to right, #f7f4ef, #ece6de);
+    padding: 20px 35px;
+    border-bottom: 1px solid #d8d1c7;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.logo {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: 3px solid #304238;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    background: white;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+
+.site-title h1 {
+    font-size: 20px;
+    color: #2d2d2d;
+    letter-spacing: 2px;
+    line-height: 1.3;
+}
+
+.site-title a {
+    text-decoration: none;
+    color: black;
+}
+
+.slogan {
+    font-size: 16px;
+    color: #8c6a3f;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* 倒數計時器 */
+.countdown{
+    background:#fff;
+    border-radius:10px;
+    padding:8px 12px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.08);
+    border:1px solid #ddd;
+    display: inline-block;
+}
+
+.countdown-title{
+    font-size:12px;
+    margin-bottom:6px;
+    color:#666;
+    font-weight: 600;
+}
+
+.timer{
+    display:flex;
+    gap:10px;
+}
+
+.time-box{
+    text-align:center;
+}
+
+.time-box span{
+    display:block;
+    background:#304238;
+    color:white;
+    padding:6px 8px;
+    border-radius:5px;
+    font-size:14.4px;
+    font-weight:bold;
+    min-width:35px;
+}
+
+.time-box small{
+    margin-top:3px;
+    display:block;
+}
+
+/* ===== 導覽列 ===== */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3f3f3f;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #8c6a3f;
+}
+
+/* ===== Footer ===== */
+footer {
+    background: #1d1d1d;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* 手機版縮放微調 */
+@media(max-width: 768px) {
+    .top-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+    nav {
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+ul {
+    margin-left: 0;      /* 移除預設左邊距 */
+    padding-left: 30px;  /* 控制黑點整體位置 */
+}
+
+li {
+    margin-bottom: 15px; /* 每行間距 */
+    line-height: 1.8;
+}
+
+.section-title{
+    font-weight: bold;
+    margin-left: 0;
+}
+
+.title-link{
+    text-decoration: none; /* 平常沒有底線 */
+    color: #8B5A2B;
+}
+
+.title-link:hover{
+    text-decoration: underline; /* 滑鼠移過去出現底線 */
+}
+
+
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header>
+
+    <div class="top-header">
+
+        <div class="logo-area">
+            <div class="logo"><a href="index.html">☕</a></div>
+
+            <div class="site-title">
+                <h1><a href="index.html">咖啡因攝取<br>對於注意力與<br>睡眠品質之影響</a></h1>
+            </div>
+        </div>
+
+
+        <div class="slogan">
+            深入了解咖啡因影響，找回生活與專注的平衡。
+            <br>
+            <nav>
+                <a href="map.html">網站地圖 </a>
+                <a href="topic.html">｜　主題相關議題</a>
+                <a href="science-fair-intro.html">｜　科展與研究素養介紹</a>
+                <a href="keyword.html">｜　關鍵詞彙索引典</a>
+                <a href="about.html">｜　關於我們</a>
+                <a href="faq.html">｜　FAQ</a>
+            </nav>
+        </div>
+
+        <div class="countdown">
+            <div class="countdown-title">
+                科展比賽截稿倒數
+            </div>
+
+            <div class="timer">
+                <div class="time-box">
+                    <span id="days">45</span>
+                    <small>天</small>
+                </div>
+                <div class="time-box">
+                    <span id="hours">12</span>
+                    <small>時</small>
+                </div>
+                <div class="time-box">
+                    <span id="minutes">36</span>
+                    <small>分</small>
+                </div>
+                <div class="time-box">
+                    <span id="seconds">58</span>
+                    <small>秒</small>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</header>
+<!-- 網頁內容 -->
+<div class="body-text">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:25px; font-size:15px; color:#666;">
+
+    <!-- 麵包屑導覽（左上） -->
+    <div>
+        <a href="index.html">首頁</a> > 
+        <a href="topic.html">主題相關議題</a>
+    </div>
+
+    <!-- 返回上一層（右上） -->
+    <div>
+        <a href="index.html">返回上一層</a>
+    </div>
+
+</div>
+<hr>
+<br>
+    <h2>一、主題介紹：咖啡因攝取對於注意力與睡眠品質之影響</h2>
+    <p>
+       現如今，人們對咖啡因的依賴度會那麼高，主要是高壓的工作環境加上生活忙碌，時常都需要咖啡因的幫助來提神醒腦，但如果攝取過量的咖啡因，很可能會對注意力與睡眠品質造成嚴重的影響。
+        </p>
+    <br>
+    <h2>二、相關議題內容</h2>
+    <a href="themefocus1.html" class="title-link"><h3>
+    （一）認識咖啡因（定義與來源）</h3></a>
+    <br>
+    <ul><li><h4>介紹咖啡因的定義與咖啡因常用於哪些地方。</h4></li></ul>
+    
+    
+    <a href="themefocus2.html" class="title-link"><h3>（二）對注意力的影響（變化分析）</h3></a>
+    <br>
+    <ul><li><h4>介紹咖啡因對注意力的影響。適量的攝取會有哪些正面影響，但要是攝取過量又會造成哪些負面的影響。</h4></li></ul>
+
+    <a href="themefocus3.html" class="title-link"><h3>（三）對睡眠的影響（關聯性）</h3></a>
+    <br>
+    <ul><li><h4>介紹咖啡因對「睡眠」的影響，說明兩者之間又有存在著何種關聯性。</h4></li></ul>
+    
+    <a href="themefocus4.html" class="title-link"><h3>（四）使用習慣與潛在風險</h3></a>
+    <br>
+    <ul><li><h4>介紹咖啡因常見的使用習慣，以及潛在風險的列點說明。</h4></li></ul>
+
+    <a href="themefocus5.html" class="title-link"><h3>（五）攝取建議（如何改善）</h3></a>
+    <br>
+    <ul><li><h4>介紹咖啡因每日建議的攝取量，還有附上健康提醒、咖啡因含量的三種標示介紹、健康的飲用習慣以及注意事項的小提醒。</h4></li></ul>
+
+
+</div>
+
+  
+</ul>
+ 
+</div>
+ 
+</div>
+
+<footer>
+    © 2026 Caffeine Research Hub. All Rights Reserved.
+</footer>
+
+<script>
+const deadline = new Date("2026-07-30 23:59:59").getTime();
+
+function updateCountdown(){
+    const now = new Date().getTime();
+    const distance = deadline - now;
+
+    document.getElementById("days").innerText = Math.floor(distance / (1000 * 60 * 60 * 24));
+    document.getElementById("hours").innerText = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    document.getElementById("minutes").innerText = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    document.getElementById("seconds").innerText = Math.floor((distance % (1000 * 60)) / 1000);
+}
+setInterval(updateCountdown,1000);
+</script>
+
+</body>
+</html>
